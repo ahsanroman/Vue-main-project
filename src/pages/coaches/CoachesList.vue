@@ -17,9 +17,6 @@
         <base-spinner></base-spinner>
       </div>
       <ul v-else-if="hasCoaches">
-        <!-- <li v-for="coach in filteredCoaches" :key="coach.id">
-        {{ coach.firstName }}
-      </li> -->
         <coach-item
           v-for="coach in filteredCoaches"
           :key="coach.id"
