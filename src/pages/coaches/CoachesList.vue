@@ -6,7 +6,6 @@
     <coach-filter @change-filter="setFilters"></coach-filter>
   </section>
   <section>
-    F
     <base-card>
       <div class="controls">
         <base-button mode="outline" @click="loadCoaches(true)"
