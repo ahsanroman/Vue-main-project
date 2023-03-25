@@ -1,8 +1,8 @@
 <template>
   <base-card>
-    <form @submit.prevent="submitFrom">
+    <form @submit.prevent="submitForm">
       <div class="form-control">
-        <label for="email">Email</label>
+        <label for="email">E-mail</label>
         <input type="email" id="email" v-model.trim="email" />
       </div>
       <div class="form-control">
@@ -10,8 +10,7 @@
         <input type="password" id="password" v-model.trim="password" />
       </div>
       <p v-if="!formIsValid">
-        Please enter a valid email and password (must be at least 6 character
-        long).
+        Please enter a valid email and password (must be at least 6 characterslong).
       </p>
       <base-button>{{ submitButtonCaption }}</base-button>
       <base-button type="button" mode="flat" @click="switchAuthMode">{{
@@ -48,7 +47,7 @@ export default {
     },
   },
   methods: {
-    submitFrom() {
+    submitForm() {
       this.formIsValid = true;
       if (
         this.email === '' ||
