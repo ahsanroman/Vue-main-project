@@ -2,7 +2,7 @@
   <base-card>
     <form @submit.prevent="submitForm">
       <div class="form-control">
-        <label for="email">E-mail</label>
+        <label for="email">E-Mail</label>
         <input type="email" id="email" v-model.trim="email" />
       </div>
       <div class="form-control">
