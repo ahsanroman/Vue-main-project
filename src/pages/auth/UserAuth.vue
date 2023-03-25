@@ -24,25 +24,25 @@
 export default {
   data() {
     return {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
       formIsValid: true,
-      mode: 'login',
+      mode: "login",
     };
   },
   computed: {
     submitButtonCaption() {
-      if (this.mode === 'login') {
-        return 'Login';
+      if (this.mode === "login") {
+        return "Login";
       } else {
-        return 'Signup';
+        return "Signup";
       }
     },
     switchModeButtonCaption() {
-      if (this.mode === 'login') {
-        return 'Signup instead';
+      if (this.mode === "login") {
+        return "Signup instead";
       } else {
-        return 'Login instead';
+        return "Login instead";
       }
     },
   },
